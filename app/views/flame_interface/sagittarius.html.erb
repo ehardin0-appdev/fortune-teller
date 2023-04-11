@@ -1,5 +1,7 @@
 <h1>Sagittarius</h1>
 
+<p>The high from your recent successes could make you want to purchase luxury items that you used to think were impractical, Sagittarius. This is fine as long as you're discriminating and don't give in to impulse buying. This also isn't a good time to overindulge in food or drink. You should let yourself enjoy your success while still using common sense.</p>
+
 <p><%= @horoscope %></p>
 
 <p>Your lucky numbers for today are:</p>
@@ -7,7 +9,7 @@
 <ul>
   <% @array_of_numbers.each do |a_num| %>
     <li>
-      <% a_num %>
+      <%= a_num %>
     </li>
   <% end %>
 </ul>

@@ -12,5 +12,14 @@ class NumbersController < ApplicationController
   end 
 
   def losers
+    @unlucky_set = Array.new
+
+    5.times do
+    @unlucky = rand(1...100)
+
+    @unlucky_set.push(@unlucky)
   end
+
+  render({ :template => "lottery_stuff/boo.html.erb"})
+end
 end
